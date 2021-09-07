@@ -1,1 +1,175 @@
-/* Add CSS styling here */
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+	vertical-align: baseline;
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+	}
+ol, ul {
+	list-style: none;
+	}
+/* tables still need cellspacing="0" in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	}
+    /* My Styles */
+
+    *{
+        box-sizing:border-box;
+    }
+    html{
+        font-size: 62.5%;
+    }
+    body{
+        font-size: 1.6rem;
+    }
+h1{
+    text-align:center;
+    font-family: 'Allison', cursive;
+    font-size: 5rem;
+}
+
+.image-container{
+    display:flex;
+    justify-content:space-between;
+    width:70%;
+    max-height:40rem;
+}
+.image-container img{
+    width: 20%;
+    display:flex;
+    height:auto;
+    justify-content:space-between;
+}
+.nav-container{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    font-size: 2rem;
+    font-family: 'Source Code Pro', monospace;
+}
+.nav-container a{
+    text-decoration: none;
+    color: black;
+    padding: 3rem;
+}
+.nav-container a:hover{
+    color:#FF0385;
+}
+.top-image-container{
+    display:flex;
+    width:100%;
+    height:max-content;
+}
+.top-image-container img{
+    width:100%;
+    height:70rem;
+}
+.all{
+    display:flex;
+    width:100%;
+    height:max-content;
+    padding:4rem;
+    align-items:center;
+    justify-content: space-between;
+}
+.button-container{
+    text-align:center;
+    text-decoration: none;
+    margin-bottom: 5rem;
+    margin-top:5rem;
+}
+.button-container a{
+    display:inline-block;
+    padding:1rem;
+    text-decoration: none;
+    border:2px solid black;
+    color:white;
+    background-color: black;
+    font-family: 'Source Code Pro', monospace;
+}
+.button-container a:hover{
+    color:#4755c4;
+
+}
+.paragraph{
+    width:20%;
+    padding-right:5rem;
+    display: flex;
+    align-items: center;
+    text-align:center;
+    justify-content: center;
+    margin-right: 2rem;
+}
+.p{
+    display:flex;
+    justify-content:flex-end;
+}
+.paragraph-container{
+    width:7%;
+    padding-left:2rem;
+}
+.introduction{
+    text-align:center;
+    font-family: 'Source Code Pro', monospace;
+    font-size:25px
+}
+.explain{
+    display:flex;
+    text-align:center;
+    width:80%;
+    margin: 0 auto;
+    font-family: 'Allison', cursive;
+    font-size:18px;
+}
+footer{
+    padding: 2rem 0;
+    background-color: lightgray;
+}
+
+/*Tablet*/
+@media(max-width:800px){
+    .paragraph{
+        width:60%;
+        margin-left:5%;
+    }
+    .top-image-container{
+        padding: 2rem;
+    }
+    footer{
+        padding:0.5rem;
+    }
+    .all{
+        padding-left:10rem;
+    }
+}
+
+/*Phone*/
+@media(max-width:500px){
+    .nav-container {
+        flex-direction: column;
+        line-height:0;
+        padding-bottom:2rem;
+    }
+    .image-container img{
+        width: 60%;
+    }
+    .image-container{
+        justify-content:center;
+        
+    }
+    .all{
+        flex-direction: column;
+    }
+}
